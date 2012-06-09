@@ -173,7 +173,7 @@ function wpcp_default_options(){
 			'right_click_by_mouse_protection' => 'Enabled', // prevent right click by mouse
 			'css_protection' => 'Enabled', // idle
 			'home_page_protection' => 'Enabled', // idle
-			'show_protection_info' => 'no' // about the plugin
+			'show_protection_info' => 'yes' // about the plugin
 		);
 	return $wpcp_settings;
 }
