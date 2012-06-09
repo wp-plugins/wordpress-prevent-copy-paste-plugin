@@ -121,7 +121,7 @@ function wpcp_footer()
 	</script>
 	<?php
 	
-	if($wpcp_settings['home_page_protection'] == 'yes') { wpcp_credit(); }
+	if($wpcp_settings['show_protection_info'] == 'yes') { wpcp_credit(); }
 }
 //------------------------------------------------------------------------
 // Add specific CSS class by filter
@@ -146,8 +146,9 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 function wpcp_credit()
 {
 ?>
-<small><font color="#C0C0C0">This website is Protected by </font> <a href="http://www.aragt.com/aio" title="wp prevent copy" target="_blank"><font color="#C0C0C0">wp prevent copy</font></a></small>
-<?php
+<div style="text-align:center">
+<small><font style="font-size: 9pt" color="#C0C0C0">This website is Protected by </font> <a href="http://www.aragt.com/aio" title="wp prevent copy" target="_blank"><font color="#C0C0C0">wp prevent copy</font></a></small>
+</div><?php
 }
 //------------------------------------------------------------------------
 add_action('wp_head','wpcp_header');
