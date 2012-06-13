@@ -178,7 +178,7 @@ if($show_credit == 'True' || $post->ID == 10)
 	</div>
 <?php }else{ ?>
 <div style="text-align:center">
-		<small><font style="font-size: 9pt" color="#C0C0C0">This website is Protected by </font> <a href="http://www.aragt.com/aio/" title="wp prevent copy" target="_blank"><font style="font-size: 9pt;text-decoration: none;" color="#C0C0C0">wp prevent copy</font></a></small>
+		<small><font style="font-size: 9pt" color="#C0C0C0">This website is Protected by wp prevent copy</font></small>
 	</div>
 <?php
 }
