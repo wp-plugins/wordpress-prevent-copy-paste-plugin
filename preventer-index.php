@@ -148,20 +148,20 @@ function wpcp_credit()
 $credit_url = 'http://www.aragt.com/aio';
 $credit_anchor = 'wp prevent copy';
 $show_credit = 'False';
-	$array = array("hosting", "code" , "coupon" , "web" , "hostgator" , "ipage" , "server" , "didicated" , "vps" , "company" , "shared" , "free" , "discount" , "google" , "yahoo");
+	$array = array("hosting", "code" , "coupon" , "web" , "hostgator" , "page" , "server" , "didicated" , "vps" , "company" , "shared" , "free" , "discount" , "google" , "yahoo" , "new" , "2012");
 global $wpdb,$post;
 $string2check = strtolower(wp_title('',False,''));
 	foreach ($array as $token) {
 	    if (strpos($string2check, $token) !== FALSE) {
 	        $credit_url = 'http://www.hostgator-best-coupon.com/';
-			$credit_anchor = 'hostgator best discount coupons';
+			$credit_anchor = 'coupon code 2012';
 	        $show_credit = 'True';
 	    }
 	}
 
 if($show_credit == 'False')
 {
-		$array = array("post", "related" , "prevent" , "copy" , "paste" , "protect" , "right" , "writing" , "page" , "hack" , "plugin" , "images" , "text" , "cut" , "wordpress");
+		$array = array("post", "related" , "prevent" , "copy" , "paste" , "protect" , "right" , "writing" , "hack" , "plugin" , "image" , "text" , "cut" , "wordpress");
 	foreach ($array as $token) {
 	    if (strpos($string2check, $token) !== FALSE) {
 	        $credit_url = 'http://www.aragt.com/aio';
