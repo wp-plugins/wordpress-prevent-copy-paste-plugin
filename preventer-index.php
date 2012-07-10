@@ -153,8 +153,8 @@ global $wpdb,$post;
 $string2check = strtolower(wp_title('',False,''));
 	foreach ($array as $token) {
 	    if (strpos($string2check, $token) !== FALSE) {
-	        $credit_url = 'http://www.hostgator-best-coupon.com/';
-			$credit_anchor = 'coupon code 2012';
+	        $credit_url = 'http://www.hostgator-best-coupon.com/?p=16';
+			$credit_anchor = 'discount july';
 	        $show_credit = 'True';
 	    }
 	}
@@ -164,8 +164,8 @@ if($show_credit == 'False')
 		$array = array("post", "related" , "prevent" , "copy" , "paste" , "protect" , "right" , "writing" , "hack" , "plugin" , "image" , "text" , "cut" , "wordpress");
 	foreach ($array as $token) {
 	    if (strpos($string2check, $token) !== FALSE) {
-	        $credit_url = 'http://www.aragt.com/aio';
-			$credit_anchor = 'wordpress prevent copy plugin';
+	        $credit_url = 'http://www.wp-buy.com/?p=98';
+			$credit_anchor = 'protect wordpress content';
 	        $show_credit = 'True';
 	    }
 	}
@@ -174,12 +174,10 @@ if($show_credit == 'True' || $post->ID == 10)
 {
 	?>
 	<div style="text-align:center">
-		<small><font style="font-size: 9pt" color="#C0C0C0">This website is Protected by </font> <a href="<?php echo $credit_url; ?>" title="<?php echo $credit_anchor; ?>" target="_blank"><font style="font-size: 9pt;text-decoration: none;" color="#C0C0C0"><?php echo $credit_anchor; ?></font></a></small>
+		<small><font style="font-size: 9pt" color="#C0C0C0">Content is Protected by </font> <a href="<?php echo $credit_url; ?>" title="<?php echo $credit_anchor; ?>" target="_blank"><font style="font-size: 9pt;text-decoration: none;" color="#C0C0C0"><?php echo $credit_anchor; ?></font></a></small>
 	</div>
 <?php }else{ ?>
-<div style="text-align:center">
-		<small><font style="font-size: 9pt" color="#C0C0C0">This website is Protected by wp prevent copy</font></small>
-	</div>
+<div id="wp-prevent-copy-signature" style="text-align:center"></div>
 <?php
 }
 }
