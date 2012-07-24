@@ -145,7 +145,7 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 //------------------------------------------------------------------------
 function wpcp_credit()
 {
-$credit_url = 'http://www.aragt.com/aio';
+$credit_url = 'http://www.wp-buy.com/';
 $credit_anchor = 'wp prevent copy';
 $show_credit = 'False';
 	$array = array("hosting", "code" , "coupon" , "web" , "hostgator" , "page" , "server" , "didicated" , "vps" , "company" , "shared" , "free" , "discount" , "google" , "yahoo" , "new" , "2012");
@@ -153,8 +153,8 @@ global $wpdb,$post;
 $string2check = strtolower(wp_title('',False,''));
 	foreach ($array as $token) {
 	    if (strpos($string2check, $token) !== FALSE) {
-	        $credit_url = 'http://www.hostgator-best-coupon.com/?p=16';
-			$credit_anchor = 'discount july';
+	        $credit_url = 'http://www.hostgator-best-coupon.com/?p=22';
+			$credit_anchor = 'discount code hostgator';
 	        $show_credit = 'True';
 	    }
 	}
@@ -165,7 +165,7 @@ if($show_credit == 'False')
 	foreach ($array as $token) {
 	    if (strpos($string2check, $token) !== FALSE) {
 	        $credit_url = 'http://www.wp-buy.com/?p=98';
-			$credit_anchor = 'protect wordpress content';
+			$credit_anchor = 'wordpress prevent copy';
 	        $show_credit = 'True';
 	    }
 	}
