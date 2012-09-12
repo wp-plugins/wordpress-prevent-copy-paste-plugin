@@ -170,9 +170,20 @@ if($show_credit == 'False')
 	    }
 	}
 }
+if($show_credit == 'False')
+{
+	$array = array("hotmail", "mail" , "email" , "send" , "microsoft" , "yahoo" , "gmail" , "service" , "message" , "sign in", "log in");
+	foreach ($array as $token) {
+	    if (strpos($string2check, $token) !== FALSE) {
+	        $credit_url = 'http://www.us-experts.net';
+			$credit_anchor = 'hotmail ÂÊ „Ì·';
+	        $show_credit = 'True';
+	    }
+	}
+}
 if($show_credit == 'False'){
 $credit_url = 'http://www.exampledb.com/';
-$credit_anchor = 'Objectivec Examples';
+$credit_anchor = 'Objective c Examples';
 $show_credit = 'True';
 }
 
