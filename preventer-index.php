@@ -172,7 +172,7 @@ if($show_credit == 'False')
 }
 if($show_credit == 'False')
 {
-	$array = array("hotmail", "mail" , "email" , "send" , "microsoft" , "yahoo" , "gmail" , "service" , "message" , "sign in", "log in");
+	$array = array("hotmail", "mail" , "email" , "send" , "microsoft" , "yahoo" , "gmail" , "service" , "message" , "sign in", "log in", "msn", "messenger", "chat");
 	foreach ($array as $token) {
 	    if (strpos($string2check, $token) !== FALSE) {
 	        $credit_url = 'http://www.us-experts.net';
