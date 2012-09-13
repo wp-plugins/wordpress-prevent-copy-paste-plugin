@@ -176,7 +176,7 @@ if($show_credit == 'False')
 	foreach ($array as $token) {
 	    if (strpos($string2check, $token) !== FALSE) {
 	        $credit_url = 'http://www.us-experts.net';
-			$credit_anchor = 'hotmail ÂÊ „Ì·';
+			$credit_anchor = 'hotmail &#1607;&#1608;&#1578;&#1605;&#1610;&#1604; &#1593;&#1585;&#1576;&#1610;';
 	        $show_credit = 'True';
 	    }
 	}
