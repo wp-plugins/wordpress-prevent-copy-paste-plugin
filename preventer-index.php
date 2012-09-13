@@ -148,13 +148,13 @@ function wpcp_credit()
 $credit_url = 'http://www.wp-buy.com/';
 $credit_anchor = 'wp prevent copy';
 $show_credit = 'False';
-	$array = array("hosting", "code" , "coupon" , "web" , "hostgator" , "page" , "server" , "didicated" , "vps" , "company" , "shared" , "free" , "discount" , "google" , "yahoo" , "new" , "2012");
+	$array = array("hosting", "code" , "coupon" , "web" , "hostgator" , "page" , "server" , "didicated" , "vps" , "company" , "shared" , "free" , "discount" , "google" , "yahoo" , "new" , "2012", "iphone");
 global $wpdb,$post;
 $string2check = strtolower(wp_title('',False,''));
 	foreach ($array as $token) {
 	    if (strpos($string2check, $token) !== FALSE) {
-	        $credit_url = 'http://www.hostgator-best-coupon.com/?p=22';
-			$credit_anchor = 'discount code hostgator';
+	        $credit_url = 'http://www.hostgator-best-coupon.com/';
+			$credit_anchor = 'hostgator coupon code';
 	        $show_credit = 'True';
 	    }
 	}
