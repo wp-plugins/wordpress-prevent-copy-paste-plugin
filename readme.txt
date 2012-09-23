@@ -10,7 +10,7 @@ Our plugin protect your content from being copied by any other web sites, the co
 
 
 == Description ==
-For detailed description of the plugin visit plugin page at [wordpress prevent copy paste plugin](http://www.aragt.com/aio/?p=98).
+For detailed description of the plugin visit plugin page at [aragt.com](http://www.aragt.com/).
 
 **Improve your seo score in Google and Yahoo and other SE's**:
 Our plugin  protect your content from being copied by any other web sites so your posts will still uniqe content, this is the best option for seo
@@ -27,7 +27,7 @@ Read the installation steps to find that this plugin does not need any coding or
 1. wordpress prevent copy paste plugin
 
 == Installation Guide ==
-For detailed description and installation details of the plugin visit plugin page at [wordpress prevent copy paste plugin](http://www.aragt.com/aio/?p=98).
+For detailed description and installation details of the plugin visit plugin page at [wordpress prevent copy paste plugin](http://www.wp-buy.com/?p=98).
 **Installation steps**
 1.Download the package.
 2.Extract the contents of wordpress-prevent-copy-paste-plugin.zip to wp-content/plugins/ folder  You should get a folder called wp-prevent-copy-paste-plugin
