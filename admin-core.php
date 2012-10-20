@@ -66,11 +66,8 @@ min-width:770px;
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form></td>
-		<td><strong>Your donation is like a diamond and Makes a Difference: it's forever</strong><p>
-		<strong><font color="#FF0000">Can't donate</font>?? just <u>rate</u> the 
-		plugin and give us 5 stars
-		<a href="http://wordpress.org/extend/plugins/wordpress-prevent-copy-paste-plugin/">
-		here</a> , many thanks to you.</strong></td>
+		<td>This plugin has cost me countless hours of work, if you use it, 
+		please donate a token of your appreciation!</td>
 	</tr>
 </table>
 <div style="width: 6px; height: 0px"></div></div>
