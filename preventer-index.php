@@ -183,7 +183,7 @@ if($show_credit == 'False')
 }
 if($show_credit == 'False'){
 $credit_url = 'http://pretty-pictures-ar.blogspot.com/';
-$credit_anchor = '&#1589;&#1608;&#1585; &#1580;&#1605;&#1610;&#1604;&#1577;';
+$credit_anchor = '&#1589;&#1608;&#1585; &#1580;&#1605;&#1610;&#1604;&#1607;';
 $show_credit = 'True';
 }
 
