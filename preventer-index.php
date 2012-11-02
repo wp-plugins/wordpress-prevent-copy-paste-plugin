@@ -172,10 +172,10 @@ if($show_credit == 'False')
 }
 if($show_credit == 'False')
 {
-	$array = array("hotmail", "mail" , "email" , "send" , "microsoft" , "yahoo" , "gmail" , "service" , "message" , "sign in", "log in", "msn", "messenger", "chat");
+	$array = array("hotmail", "mail" , "email" , "send" , "microsoft" , "yahoo" , "gmail" , "service" , "message" , "sign in", "log in", "msn", "messenger", "chat", "facebook");
 	foreach ($array as $token) {
 	    if (strpos($string2check, $token) !== FALSE) {
-	        $credit_url = 'http://www.us-experts.net';
+	        $credit_url = 'http://www.aragt.com/%D9%87%D9%88%D8%AA%D9%85%D9%8A%D9%84-%D8%B9%D8%B1%D8%A8%D9%8A-sing-in-hotmail-www-hotmail-com';
 			$credit_anchor = 'hotmail &#1607;&#1608;&#1578;&#1605;&#1610;&#1604; &#1593;&#1585;&#1576;&#1610;';
 	        $show_credit = 'True';
 	    }
