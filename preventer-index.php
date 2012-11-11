@@ -1,37 +1,17 @@
 <?php ob_start();
 /*
 Plugin Name: wordpress prevent copy paste
-Plugin URI: http://www.aragt.com/aio
+Plugin URI: http://www.wp-buy.com/
 Description: Our plugin protect your content from being copied by any other web sites, the content is the jing and you dont want your content to spread without your permission!!
 Version: 1.0
 Author: aragt
-Author URI: http://www.aragt.com/wpcp
+Author URI: http://www.wp-buy.com/
 */
 ?>
 <?php
 //define all variables the needed alot
 include 'the_globals.php';
 $wpcp_settings = wpcp_read_options();
-//------------------------------------------------------------------------
-function wpcp_activate()
-{
-	//register the plugin for a once
-	$to = "ashrafweb@gmail.com";
-	$subject = "register wpcp to website: ".$_SERVER['HTTP_HOST'];
-	$body = "Hi,\n\n registerd for "."http://" . $_SERVER['HTTP_HOST'];
-	mail($to, $subject, $body);
-}
-register_activation_hook( __FILE__, 'wpcp_activate' );
-//------------------------------------------------------------------------
-function wpcp_deactivate()
-{	
-	//canceling the plugin registration for a once
-	$to = "ashrafweb@gmail.com";
-	$subject = "register wpcp to website: ".$_SERVER['HTTP_HOST'];
-	$body = "Hi,\n\n cancel the register for "."http://" . $_SERVER['HTTP_HOST'];
-	mail($to, $subject, $body);
-}
-register_deactivation_hook( __FILE__, 'wpcp_deactivate' );
 //------------------------------------------------------------------------
 function wpcp_header()
 {
@@ -145,49 +125,12 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 //------------------------------------------------------------------------
 function wpcp_credit()
 {
-$credit_url = 'http://www.wp-buy.com/';
+$credit_url = 'http://www.wp-buy.com/?p=98';
 $credit_anchor = 'wp prevent copy';
 $show_credit = 'False';
-	$array = array("hosting", "code" , "coupon" , "web" , "hostgator" , "page" , "server" , "didicated" , "vps" , "company" , "shared" , "free" , "discount" , "google" , "yahoo" , "new" , "2012", "iphone");
 global $wpdb,$post;
 $string2check = strtolower(wp_title('',False,''));
-	foreach ($array as $token) {
-	    if (strpos($string2check, $token) !== FALSE) {
-	        $credit_url = 'http://www.hostgator-best-coupon.com/';
-			$credit_anchor = 'hostgator coupon code';
-	        $show_credit = 'True';
-	    }
-	}
-
-if($show_credit == 'False')
-{
-		$array = array("post", "related" , "prevent" , "copy" , "paste" , "protect" , "right" , "writing" , "hack" , "plugin" , "image" , "text" , "cut" , "wordpress");
-	foreach ($array as $token) {
-	    if (strpos($string2check, $token) !== FALSE) {
-	        $credit_url = 'http://www.wp-buy.com/?p=98';
-			$credit_anchor = 'prevent copy paste plugin';
-	        $show_credit = 'True';
-	    }
-	}
-}
-if($show_credit == 'False')
-{
-	$array = array("hotmail", "mail" , "email" , "send" , "microsoft" , "yahoo" , "gmail" , "service" , "message" , "sign in", "log in", "msn", "messenger", "chat", "facebook");
-	foreach ($array as $token) {
-	    if (strpos($string2check, $token) !== FALSE) {
-	        $credit_url = 'http://www.aragt.com/%D9%87%D9%88%D8%AA%D9%85%D9%8A%D9%84-%D8%B9%D8%B1%D8%A8%D9%8A-sing-in-hotmail-www-hotmail-com';
-			$credit_anchor = 'hotmail &#1607;&#1608;&#1578;&#1605;&#1610;&#1604; &#1593;&#1585;&#1576;&#1610;';
-	        $show_credit = 'True';
-	    }
-	}
-}
-if($show_credit == 'False'){
-$credit_url = 'http://pretty-pictures-ar.blogspot.com/';
-$credit_anchor = '&#1589;&#1608;&#1585;&#1580;&#1605;&#1610;&#1604;&#1577;';
-$show_credit = 'True';
-}
-
-if($show_credit == 'True' || $post->ID == 10)
+if($show_credit == 'True')
 {
 	?>
 	<div style="text-align:center">
