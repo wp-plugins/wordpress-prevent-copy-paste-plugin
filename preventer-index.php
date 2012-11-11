@@ -127,9 +127,8 @@ function wpcp_credit()
 {
 $credit_url = 'http://www.wp-buy.com/?p=98';
 $credit_anchor = 'wp prevent copy';
-$show_credit = 'False';
+$show_credit = 'True';
 global $wpdb,$post;
-$string2check = strtolower(wp_title('',False,''));
 if($show_credit == 'True')
 {
 	?>
@@ -159,13 +158,13 @@ function wpcp_read_options()
 //-------------------------------------------------------Set default values to the array
 function wpcp_default_options(){
 	$pluginsurl = plugins_url( '', __FILE__ );
-	$wpcp_settings = 
+	$wpcp_settings =
 	Array (
 			'single_posts_protection' => 'Enabled', // prevent content copy, take 3 parameters, 1.content: to prevent content copy only	2.all	3.none
 			'right_click_by_mouse_protection' => 'Enabled', // prevent right click by mouse
 			'css_protection' => 'Enabled', // idle
 			'home_page_protection' => 'Enabled', // idle
-			'show_protection_info' => 'yes' // about the plugin
+			'show_protection_info' => 'no' // about the plugin
 		);
 	return $wpcp_settings;
 }
