@@ -127,8 +127,8 @@ function wpcp_credit()
 {
 $credit_url = 'http://www.wp-buy.com/?p=98';
 $credit_anchor = 'wp prevent copy';
-$show_credit = 'True';
-global $wpdb,$post;
+$show_credit = 'False';
+if($wpcp_settings['show_protection_info'] == 'yes') {$show_credit = 'True';}
 if($show_credit == 'True')
 {
 	?>
