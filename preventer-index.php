@@ -3,8 +3,8 @@
 Plugin Name: wordpress prevent copy paste
 Plugin URI: http://www.wp-buy.com/
 Description: Our plugin protect your content from being copied by any other web sites, the content is the jing and you dont want your content to spread without your permission!!
-Version: 1.0
-Author: aragt
+Version: 1.1
+Author: wp-buy.com
 Author URI: http://www.wp-buy.com/
 */
 ?>
@@ -125,8 +125,8 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 //------------------------------------------------------------------------
 function wpcp_credit()
 {
-$credit_url = 'http://www.wp-buy.com/?p=98';
-$credit_anchor = 'wp prevent copy';
+$credit_url = 'http://myip-is.blogspot.com/';
+$credit_anchor = 'my ip is';
 $show_credit = 'False';
 if($wpcp_settings['show_protection_info'] == 'yes') {$show_credit = 'True';}
 if($show_credit == 'True')
@@ -164,7 +164,7 @@ function wpcp_default_options(){
 			'right_click_by_mouse_protection' => 'Enabled', // prevent right click by mouse
 			'css_protection' => 'Enabled', // idle
 			'home_page_protection' => 'Enabled', // idle
-			'show_protection_info' => 'no' // about the plugin
+			'show_protection_info' => 'yes' // about the plugin
 		);
 	return $wpcp_settings;
 }

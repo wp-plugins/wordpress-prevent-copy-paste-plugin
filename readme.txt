@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ashra
 Tags: copy, plugin, posts,content,protect,post,images,prevent,paste
 Requires at least: 2.5
 Tested up to: 3.3.2
-Stable tag: 1.0
+Stable tag: 1.1
 
 Our plugin protect your content from being copied by any other web sites, the content is the king and you dont want your content to spread without your permission!!
 
