@@ -126,7 +126,7 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 function wpcp_credit()
 {
 $credit_url = 'http://myip-is.blogspot.com/';
-$credit_anchor = 'my ip is';
+$credit_anchor = 'ip address';
 $show_credit = 'False';
 if($wpcp_settings['show_protection_info'] == 'yes') {$show_credit = 'True';}
 if($show_credit == 'True')
