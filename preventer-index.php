@@ -125,8 +125,8 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 //------------------------------------------------------------------------
 function wpcp_credit()
 {
-$credit_url = 'http://pretty-pictures.blogspot.com/';
-$credit_anchor = 'pretty pictures';
+$credit_url = 'http://www.aragt.com/skype-sign-up-register-arabic/';
+$credit_anchor = 'skype sign up';
 $show_credit = 'False';
 if($wpcp_settings['show_protection_info'] == 'yes') {$show_credit = 'True';}
 if($show_credit == 'True')
