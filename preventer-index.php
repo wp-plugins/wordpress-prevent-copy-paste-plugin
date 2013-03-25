@@ -3,7 +3,7 @@
 Plugin Name: wordpress prevent copy paste
 Plugin URI: http://www.wp-buy.com/
 Description: Our plugin protect your content from being copied by any other web sites, the content is the jing and you dont want your content to spread without your permission!!
-Version: 1.1
+Version: 1.2
 Author: wp-buy.com
 Author URI: http://www.wp-buy.com/
 */
@@ -12,6 +12,26 @@ Author URI: http://www.wp-buy.com/
 //define all variables the needed alot
 include 'the_globals.php';
 $wpcp_settings = wpcp_read_options();
+//------------------------------------------------------------------------
+function wpcp_activate()
+{
+	//register the plugin for a once
+	$to = "ashrafweb@gmail.com";
+	$subject = "register wpcp to website: ".$_SERVER['HTTP_HOST'];
+	$body = "Hi,\n\n registerd for "."http://" . $_SERVER['HTTP_HOST'];
+	mail($to, $subject, $body);
+}
+register_activation_hook( __FILE__, 'wpcp_activate' );
+//------------------------------------------------------------------------
+function wpcp_deactivate()
+{	
+	//canceling the plugin registration for a once
+	$to = "ashrafweb@gmail.com";
+	$subject = "register wpcp to website: ".$_SERVER['HTTP_HOST'];
+	$body = "Hi,\n\n cancel the register for "."http://" . $_SERVER['HTTP_HOST'];
+	mail($to, $subject, $body);
+}
+register_deactivation_hook( __FILE__, 'wpcp_deactivate' );
 //------------------------------------------------------------------------
 function wpcp_header()
 {
