@@ -146,7 +146,7 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 function wpcp_credit()
 {
 $credit_url = 'http://www.aragt.com/skype-sign-up-register-arabic/';
-$credit_anchor = 'skype sign up';
+$credit_anchor = '&#1575;&#1604;&#1608;&#1608;&#1585;&#1583; 2007 &#1593;&#1585;&#1576;&#1610;';
 $show_credit = 'False';
 if($wpcp_settings['show_protection_info'] == 'yes') {$show_credit = 'True';}
 if($show_credit == 'True')
@@ -156,7 +156,7 @@ if($show_credit == 'True')
 		<small><font style="font-size: 9pt" color="#C0C0C0">Content is Protected by </font> <a href="<?php echo $credit_url; ?>" title="<?php echo $credit_anchor; ?>" target="_blank"><font style="font-size: 9pt;text-decoration: none;" color="#C0C0C0"><?php echo $credit_anchor; ?></font></a></small>
 	</div>
 <?php }else{ ?>
-<div id="wp-prevent-copy-signature" style="text-align:center"><small><font style="font-size: 9pt" color="#C0C0C0">Content is Protected</font></small></div>
+<div id="wp-prevent-copy-signature" style="text-align:center"></div>
 <?php
 }
 }
