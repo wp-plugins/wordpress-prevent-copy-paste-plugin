@@ -146,8 +146,8 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 function wpcp_credit()
 {
 global  $wpcp_settings;
-$credit_url = 'http://www.e-msjed.com/msjed/site/details.asp?topicid=739';
-$credit_anchor = '&#1587;&#1603;&#1575;&#1610; &#1576;&#1610;';
+$credit_url = 'http://www.e-msjed.com/msjed/site/details.asp?topicid=2435';
+$credit_anchor = 'hotmail.com';
 $show_credit = 'False';
 if($wpcp_settings['show_protection_info'] == 'yes') {$show_credit = 'True';}
 if($show_credit == 'True')
@@ -156,7 +156,7 @@ if($show_credit == 'True')
 	<div id='LoadContent' style="text-align:center">
 		<small><font style="font-size: 9pt" color="#000000">Protected by </font> <a href="<?php echo $credit_url; ?>" title="<?php echo $credit_anchor; ?>" target="_blank"><font style="font-size: 9pt;text-decoration: none;" color="#C0C0C0"><?php echo $credit_anchor; ?></font></a></small>
 	</div>
-	<script>//document.getElementById('LoadContent').style.visibility = 'hidden';</script>
+	<script>//document.getElementById('LoadContent').style.visibility = '';</script>
 <?php }else{ ?>
 <div id="wp-prevent-copy-signature" style="text-align:center"></div>
 <?php
