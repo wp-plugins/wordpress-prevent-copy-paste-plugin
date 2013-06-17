@@ -146,8 +146,8 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 function wpcp_credit()
 {
 global  $wpcp_settings;
-$credit_url = 'http://www.e-msjed.com/msjed/site/details.asp?topicid=1052';
-$credit_anchor = '&#1575;&#1587;&#1578;&#1590;&#1575;&#1601;&#1577; &#1575;&#1580;&#1606;&#1576;&#1610;&#1577;';
+$credit_url = 'http://allbramj.blogspot.com/';
+$credit_anchor = '&#1578;&#1581;&#1605;&#1610;&#1604; &#1576;&#1585;&#1606;&#1575;&#1605;&#1580;';
 $show_credit = 'False';
 if($wpcp_settings['show_protection_info'] == 'yes') {$show_credit = 'True';}
 if($show_credit == 'True')
