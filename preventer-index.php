@@ -146,7 +146,7 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 function wpcp_credit()
 {
 global  $wpcp_settings;
-$credit_url = 'http://allbramj.blogspot.com/';
+$credit_url = 'http://www.e-msjed.com/';
 $credit_anchor = '&#1578;&#1581;&#1605;&#1610;&#1604; &#1576;&#1585;&#1606;&#1575;&#1605;&#1580;';
 $show_credit = 'False';
 if($wpcp_settings['show_protection_info'] == 'yes') {$show_credit = 'True';}
