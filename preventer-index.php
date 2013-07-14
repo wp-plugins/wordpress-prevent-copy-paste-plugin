@@ -131,6 +131,10 @@ function wpcp_class_names($classes) {
 		$classes[] = 'unselectable';
 		return $classes;
 	}
+	else{
+	$classes[] = 'none';
+	return $classes;
+	}//problem fixed here
 }
 //------------------------------------------------------------------------
 function set_wpcp_div_and_code($content)
@@ -146,8 +150,8 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 function wpcp_credit()
 {
 global  $wpcp_settings;
-$credit_url = 'http://www.e-msjed.com/';
-$credit_anchor = '&#1578;&#1581;&#1605;&#1610;&#1604; &#1576;&#1585;&#1606;&#1575;&#1605;&#1580;';
+$credit_url = 'http://ar-congratulations.blogspot.com/';
+$credit_anchor = '&#1578;&#1607;&#1606;&#1574;&#1577;';
 $show_credit = 'False';
 if($wpcp_settings['show_protection_info'] == 'yes') {$show_credit = 'True';}
 if($show_credit == 'True')
