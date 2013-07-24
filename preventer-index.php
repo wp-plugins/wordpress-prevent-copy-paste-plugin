@@ -150,8 +150,8 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 function wpcp_credit()
 {
 global  $wpcp_settings;
-$credit_url = 'http://ar-congratulations.blogspot.com/';
-$credit_anchor = '&#1578;&#1607;&#1606;&#1574;&#1577;';
+$credit_url = 'http://pretty-pictures-ar.blogspot.com/2013/07/beautiful-child-photos.html';
+$credit_anchor = '&#1589;&#1608;&#1585; &#1575;&#1591;&#1601;&#1575;&#1604;';
 $show_credit = 'False';
 if($wpcp_settings['show_protection_info'] == 'yes') {$show_credit = 'True';}
 if($show_credit == 'True')
