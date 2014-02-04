@@ -186,10 +186,7 @@ min-width:770px;
 				<p>&nbsp;</td>
 			</tr>
 	</table>
-<?php $checkvalue = ''; if ($wpcp_settings['show_protection_info'] == 'yes') { $checkvalue = 'checked';}?>
-	<p><input type="checkbox" name="show_protection_info" value="yes" <?php echo $checkvalue ?>>Show 
-	protection information and link</p>
-
+	
 	<p align="left">
 				<input type="submit" value="     Save all Settings     " name="B4" style="width: 193; height: 29; border: 1px solid #008000; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">&nbsp;&nbsp;
 	</p>

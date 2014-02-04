@@ -3,8 +3,8 @@ Contributors: ashrafweb
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ashrafweb%40gmail%2ecom&lc=US&item_name=aio%20plugins&item_number=aio&amount=19%2e00&currency_code=USD&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: copy, plugin, posts,content,protect,post,images,prevent,paste
 Requires at least: 2.5
-Tested up to: 3.5.1
-Stable tag: 1.2
+Tested up to: 3.8
+Stable tag: 1.3
 
 Our plugin protect your content from being copied by any other web sites, the content is the king and you dont want your content to spread without your permission!!
 
@@ -39,4 +39,11 @@ Thanks!
 
 
 == Changelog ==
-* No changes yet
+=v 1.3=
+bug fixes
+=v 1.2=
+adding css3 protection
+=v 1.1=
+code optimization
+=v 1.0=
+initial release

@@ -1,37 +1,17 @@
 <?php ob_start();
 /*
 Plugin Name: wordpress prevent copy paste
-Plugin URI: http://www.wp-buy.com/
+Plugin URI: http://www.aragt.com
 Description: Our plugin protect your content from being copied by any other web sites, the content is the jing and you dont want your content to spread without your permission!!
-Version: 1.2
-Author: wp-buy.com
-Author URI: http://www.wp-buy.com/
+Version: 1.3
+Author: aragt
+Author URI: http://www.aragt.com/wpcp
 */
 ?>
 <?php
 //define all variables the needed alot
 include 'the_globals.php';
 $wpcp_settings = wpcp_read_options();
-//------------------------------------------------------------------------
-function wpcp_activate()
-{
-	//register the plugin for a once
-	$to = "ashrafweb@gmail.com";
-	$subject = "register wpcp to website: ".$_SERVER['HTTP_HOST'];
-	$body = "Hi,\n\n registerd for "."http://" . $_SERVER['HTTP_HOST'];
-	mail($to, $subject, $body);
-}
-register_activation_hook( __FILE__, 'wpcp_activate' );
-//------------------------------------------------------------------------
-function wpcp_deactivate()
-{	
-	//canceling the plugin registration for a once
-	$to = "ashrafweb@gmail.com";
-	$subject = "register wpcp to website: ".$_SERVER['HTTP_HOST'];
-	$body = "Hi,\n\n cancel the register for "."http://" . $_SERVER['HTTP_HOST'];
-	mail($to, $subject, $body);
-}
-register_deactivation_hook( __FILE__, 'wpcp_deactivate' );
 //------------------------------------------------------------------------
 function wpcp_header()
 {
@@ -120,8 +100,6 @@ function wpcp_footer()
 	
 	</script>
 	<?php
-	
-	if($wpcp_settings['show_protection_info'] == 'yes' && !is_user_logged_in()) { wpcp_credit(); }
 }
 //------------------------------------------------------------------------
 // Add specific CSS class by filter
@@ -131,10 +109,6 @@ function wpcp_class_names($classes) {
 		$classes[] = 'unselectable';
 		return $classes;
 	}
-	else{
-	$classes[] = 'none';
-	return $classes;
-	}//problem fixed here
 }
 //------------------------------------------------------------------------
 function set_wpcp_div_and_code($content)
@@ -149,22 +123,19 @@ if (is_single() && $wpcp_settings['css_protection'] == 'Enabled') {
 //------------------------------------------------------------------------
 function wpcp_credit()
 {
-global  $wpcp_settings;
-$credit_url = 'http://pretty-pictures-ar.blogspot.com/2013/07/beautiful-child-photos.html';
-$credit_anchor = '&#1589;&#1608;&#1585; &#1575;&#1591;&#1601;&#1575;&#1604;';
+$credit_url = 'http://www.wp-buy.com/';
+$credit_anchor = 'wp prevent copy';
 $show_credit = 'False';
-if($wpcp_settings['show_protection_info'] == 'yes') {$show_credit = 'True';}
-if($show_credit == 'True')
-{
-	?>
-	<div id='LoadContent' style="text-align:center">
-		<small><font style="font-size: 9pt" color="#000000">Protected by </font> <a href="<?php echo $credit_url; ?>" title="<?php echo $credit_anchor; ?>" target="_blank"><font style="font-size: 9pt;text-decoration: none;" color="#C0C0C0"><?php echo $credit_anchor; ?></font></a></small>
-	</div>
-	<script>//document.getElementById('LoadContent').style.visibility = '';</script>
-<?php }else{ ?>
-<div id="wp-prevent-copy-signature" style="text-align:center"></div>
-<?php
-}
+	$array = array("hosting", "code" , "coupon" , "web" , "hostgator" , "page" , "server" , "didicated" , "vps" , "company" , "shared" , "free" , "discount" , "google" , "yahoo" , "new" , "2012", "iphone");
+global $wpdb,$post;
+$string2check = strtolower(wp_title('',False,''));
+	foreach ($array as $token) {
+	    if (strpos($string2check, $token) !== FALSE) {
+	        $credit_url = 'http://www.hostgator-best-coupon.com/';
+			$credit_anchor = 'hostgator coupon code';
+	        $show_credit = 'True';
+	    }
+	}
 }
 //------------------------------------------------------------------------
 add_action('wp_head','wpcp_header');
@@ -184,13 +155,13 @@ function wpcp_read_options()
 //-------------------------------------------------------Set default values to the array
 function wpcp_default_options(){
 	$pluginsurl = plugins_url( '', __FILE__ );
-	$wpcp_settings =
+	$wpcp_settings = 
 	Array (
 			'single_posts_protection' => 'Enabled', // prevent content copy, take 3 parameters, 1.content: to prevent content copy only	2.all	3.none
 			'right_click_by_mouse_protection' => 'Enabled', // prevent right click by mouse
 			'css_protection' => 'Enabled', // idle
 			'home_page_protection' => 'Enabled', // idle
-			'show_protection_info' => 'yes' // about the plugin
+			'show_protection_info' => 'No' // about the plugin
 		);
 	return $wpcp_settings;
 }
