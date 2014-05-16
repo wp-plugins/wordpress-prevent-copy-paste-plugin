@@ -1,5 +1,5 @@
-=== wordpress prevent copy paste plugin ===
-Contributors: ashrafweb
+=== wordpress prevent copy paste plugin (lite) ===
+Contributors: wp-buy
 Donate link: 
 Tags: copy protect, protect posts,content protection,protect blog, avoid content theft,disable context menu,prevent copy,disable right click,no right click,save images
 Requires at least: 2.5
