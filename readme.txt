@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ashra
 Tags: copy protect, protect posts,content protection,protect blog, avoid content theft,disable context menu,prevent copy,disable right click,no right click,save images
 Requires at least: 2.5
 Tested up to: 3.9.1
-Stable tag: 1.3
+Stable tag: 1.4.0.1
 
 Our plugin protect your content from being copied by any other web sites, the content is the king and you dont want your content to spread without your permission!!
 
