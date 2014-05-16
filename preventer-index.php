@@ -4,7 +4,7 @@ Plugin Name: wordpress prevent copy paste
 Plugin URI: http://www.wp-buy.com
 Description: Our plugin protect your content from being copied by any other web sites, the content is the jing and you dont want your content to spread without your permission!!
 Version: 1.4.0.1
-Author: aragt
+Author: wp-buy
 Author URI: http://www.wp-buy.com/
 */
 ?>

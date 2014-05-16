@@ -39,11 +39,14 @@ Thanks!
 
 
 == Changelog ==
-=v 1.3=
+= v 1.4.0.1 =
+New Ad Update
 bug fixes
-=v 1.2=
+= v 1.3 =
+bug fixes
+= v 1.2 =
 adding css3 protection
-=v 1.1=
+= v 1.1 =
 code optimization
-=v 1.0=
+= v 1.0 =
 initial release
