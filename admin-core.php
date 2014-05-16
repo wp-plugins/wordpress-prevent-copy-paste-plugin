@@ -80,10 +80,6 @@ min-width:770px;
 
 <div class="inner_block">
 	<h2>Smart Wordpress Prevent Copy/Paste Options:</h2>
-	<p>Our plugin protect your content from being copied by any other web sites, 
-	the content is the king and you don't want your content be distributed 
-	without your permission!!</p>
-	<p align="left"><?php echo "<img src='$pluginsurl/images/logo.png' align='center' />";?></p>
 		<table border="0" width="100%" cellspacing="0" cellpadding="0">
 			<tr>
 				<td width="60%">
@@ -112,48 +108,6 @@ min-width:770px;
 				<p align="center"><font color="#008000">For single posts content</font></td>
 			</tr>
 			<tr>
-				<td width="221"><b>Right click </b>(by mouse) Protection</td>
-				<td><select size="1" name="right_click_by_mouse_protection">
-				<?php 
-				if ($wpcp_settings['right_click_by_mouse_protection'] == 'Enabled')
-					{
-						echo '<option selected>Enabled</option>';
-						echo '<option>Disabled</option>';
-					}
-					else
-					{
-						echo '<option>Enabled</option>';
-						echo '<option selected>Disabled</option>';
-					}
-				?>
-				</select></td>
-				<td width="212">
-				<p align="center"><font color="#008000">disallow right mouse 
-				click to prevent saving images</font></td>
-			</tr>
-			<tr>
-				<td width="221">Protection by <b>CSS</b></td>
-				<td>
-				<select size="1" name="css_protection">
-				<?php 
-				if ($wpcp_settings['css_protection'] == 'Enabled')
-					{
-						echo '<option selected>Enabled</option>';
-						echo '<option>Disabled</option>';
-					}
-					else
-					{
-						echo '<option>Enabled</option>';
-						echo '<option selected>Disabled</option>';
-					}
-				?>
-				</select>
-				</td>
-				<td width="212">
-				<p align="center"><font color="#008000">Using CSS special code 
-				to protect the content without JavaScript</font></td>
-			</tr>
-			<tr>
 				<td width="221"><b>Home Page</b> Protection</td>
 				<td>
 				<select size="1" name="home_page_protection">
@@ -174,12 +128,6 @@ min-width:770px;
 				<td width="212">
 				<p align="center"><font color="#008000">Dont copy any thing! 
 				even from my homepage</font></td>
-			</tr>
-			<tr>
-				<td width="221">&nbsp;</td>
-				<td>
-				&nbsp;</td>
-				<td width="212">&nbsp;</td>
 			</tr>
 			</table></div>
 
