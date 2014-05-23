@@ -56,6 +56,22 @@ min-width:770px;
     margin: 15px;
     }
 </style>
+<div id="donate" style="width: 914px; height: 322px">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" dir="ltr" height="88" bgcolor="#FFFFFF">
+	<tr>
+		<td align="center"><b>
+		<font size="7">
+		<a target="_blank" href="http://codecanyon.net/item/smart-content-protector-pro-wp-copy-protection/5400835">
+		Live Preview</a></font></b><p><b><font color="#00A600">Get the premium 
+		version 
+		</font></b></p>
+		<p><b><font color="#00A600">and enjoy</font></b></p>
+		<p><b><font color="#00A600">a full protection!</font></b></td>
+		<td width="596">
+		<img class="decoded" alt="http://0.s3.envato.com/files/90380724/SmartContentProtector.jpg" src="http://0.s3.envato.com/files/90380724/SmartContentProtector.jpg" align="right"></td>
+	</tr>
+</table>
+<div style="width: 6px; height: 0px"></div></div>
 <div id="aio_admin_main">
 <form method="POST">
 <input type="hidden" value="update" name="action">
