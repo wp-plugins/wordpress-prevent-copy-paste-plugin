@@ -3,8 +3,8 @@ Contributors: wp-buy
 Donate link: 
 Tags: copy protect, protect posts,content protection,protect blog, avoid content theft,disable context menu,prevent copy,disable right click,no right click,save images
 Requires at least: 2.5
-Tested up to: 3.9.1
-Stable tag: 1.4.0.1
+Tested up to: 4.1
+Stable tag: trunk
 
 
 == Description ==
